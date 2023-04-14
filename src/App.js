@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const Intro = () => {
+  return (
+    <>
+      <h1>Overview of GRSTAPS</h1>
+      <h2>GRSTAPS is a graph-based approach that aims to solve a task planning problem for a heterogeneous multi-robot team</h2>
+      <h2>There are four submodules: </h2>
+      <ul>
+        <li>Task Planning (what)</li>
+        <li>Task Allocation (who)</li>
+        <li>Scheduling (when)</li>
+        <li>Motion Planning (how)</li>
+      </ul>
+    </>
+  )
+}
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Intro />
     </div>
   );
 }
