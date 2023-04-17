@@ -1,9 +1,10 @@
 import './App.css';
-import Charts from './chart';
+// import {Charts, Charts1} from './chart';
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Instructions from "./pages/Instructions";
-import Question1 from "./pages/Question1"
+import { Question1 } from "./pages/Question1"
+import {Question2} from "./pages/Question2"
 
 const Intro = () => {
   return (
@@ -24,20 +25,6 @@ const Intro = () => {
   )
 }
 
-const TestForm = () => {
-  return (
-    <>
-      <form>
-        <div class="form-control">
-          <label for="name">Name: </label>
-          <input id="name" name="name" type="text" />
-        </div>
-        <button class="btn" type="submit">Send</button>
-      </form>
-    </>
-  )
-}
-
 const App = () => {
   return (
     <BrowserRouter>
@@ -46,8 +33,8 @@ const App = () => {
         <Route path="home" element={<Intro />} />
         <Route path="instructions" element={<Instructions />} />
         <Route path="q1" element={<Question1 />} />
-        <Route path="test" element={<TestForm />} />
-        <Route path="page1" element={<Charts />} />
+        <Route path="q2" element={<Question2 />} />
+        {/* <Route path="page1" element={<Charts />} /> */}
       </Route>
     </Routes>
       {/* <div className="App">
