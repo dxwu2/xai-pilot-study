@@ -1,11 +1,17 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ChartsQ1A, ChartsQ1B, ChartsQ1C, ChartsQ1D } from '../chart';
 
-function Question1(props) {
-    // const [selectedOption, setSelectedOption] = useState(null);
-    // const handleOptionChange = (event) => {
-    //     setSelectedOption(event.target.value);
-    // };
+function Question1() {
+    const [selectedOption, setSelectedOption] = useState(null);
+    function handleOptionChange(event) {
+        setSelectedOption(event.target.value);
+    };
+
+    function handleButtonClick(event) {
+        event.preventDefault();
+        console.log('stored:', selectedOption)
+    }
 
     return (
       <>
@@ -44,28 +50,18 @@ function Question1(props) {
         </ul>
 
         <form>
-            <input type="radio" id="option1" name="options" value="A." />
-            <label htmlFor="option1"><img src="imgs/wrong1.PNG" alt="Option A" width="40%"/></label>
-            <input type="radio" id="option2" name="options" value="B." />
-            <label htmlFor="option2"><img src="imgs/wrong2.PNG" alt="Option B" width="40%"/></label>
-            <input type="radio" id="option3" name="options" value="C." />
-            <label htmlFor="option3"><img src="imgs/wrong3.PNG" alt="Option C" width="40%"/></label>
-            <input type="radio" id="option4" name="options" value="D." />
-            <label htmlFor="option4"><img src="imgs/correct.PNG" alt="Option D" width="40%"/></label>
-
-            {/* <label>
-                <input 
-                    type="radio"
-                    value={props.options[0]}
-                    checked={selectedOption === props.options[0]}
-                    onChange={handleOptionChange}
-                    />
-                    {props.options[0]}
-            </label> */}
+            <input type="radio" id="option1" name="options" value="A" onChange={handleOptionChange} />
+            <label htmlFor="option1"><ChartsQ1A /></label>
+            <input type="radio" id="option2" name="options" value="B" onChange={handleOptionChange} />
+            <label htmlFor="option2"><ChartsQ1B /></label>
+            <input type="radio" id="option3" name="options" value="C" onChange={handleOptionChange} />
+            <label htmlFor="option3"><ChartsQ1C /></label>
+            <input type="radio" id="option4" name="options" value="D" onChange={handleOptionChange} />
+            <label htmlFor="option2"><ChartsQ1D /></label>
         </form>
 
         <Link to="/test">
-            <button>Next</button>
+            <button onClick={handleButtonClick}>Next</button>
         </Link>
       </>
     )
