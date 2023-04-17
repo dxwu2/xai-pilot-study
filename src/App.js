@@ -5,12 +5,14 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Instructions from "./pages/Instructions";
 import { Question1 } from "./pages/Question1"
 import {Question2} from "./pages/Question2"
+import Solutions from "./pages/Solutions"
 
 const Intro = () => {
   return (
     <>
       <h1>Overview of GRSTAPS</h1>
       <h2>GRSTAPS is a graph-based approach that aims to solve a task planning problem for a heterogeneous multi-robot team</h2>
+      <img src="../imgs/itags_architecture.png" alt="GRSTAPS architecture" height="400"></img>
       <h2>There are four submodules: </h2>
       <ul>
         <li>Task Planning (what)</li>
@@ -34,14 +36,9 @@ const App = () => {
         <Route path="instructions" element={<Instructions />} />
         <Route path="q1" element={<Question1 />} />
         <Route path="q2" element={<Question2 />} />
-        {/* <Route path="page1" element={<Charts />} /> */}
+        <Route path="solutions" element={<Solutions />} />
       </Route>
     </Routes>
-      {/* <div className="App">
-        <Intro />
-        <TestForm />
-        <Charts />
-      </div> */}
     </BrowserRouter>
   );
 }

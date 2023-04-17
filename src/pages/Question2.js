@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ChartsQ1A, ChartsQ1B, ChartsQ1C, ChartsQ1D } from '../chart';
+import { ChartsQ2A, ChartsQ2B, ChartsQ2C, ChartsQ2D } from '../chart';
 
-function Question1() {
+function Question2() {
     const [selectedOption, setSelectedOption] = useState(null);
     function handleOptionChange(event) {
         setSelectedOption(event.target.value);
@@ -15,7 +15,7 @@ function Question1() {
         event.preventDefault();
         console.log('stored:', selectedOption)
 
-        navigate('/q2'); // navigate to next page
+        navigate('/solutions'); // navigate to next page
     }
 
     function getResponse(val) {
@@ -24,38 +24,43 @@ function Question1() {
 
     return (
       <>
-        <h1>Scenario 1: Fire Rescue Scenario</h1>
+        <h1>Scenario 2: Fire Rescue Scenario</h1>
         <p>There is a disaster at hand and there are the following tasks that need to be completed: rescuing humans, removing rubble, and putting out fires. You are given the following robots with the following traits:</p>
         <h2>Robots</h2>
         <ul>
-            <li>1 Firetruck</li>
+            <li>2 Firetrucks</li>
             <ul>
                 <li>Can put out fires</li>
                 <li>Max Weight Capacity of 250</li>
+                <li>Fastest moving speed</li>
             </ul>
-            <li>1 Rescue Robot</li>
+            <li>3 Rescue Robots</li>
             <ul>
                 <li>Can rescue humans, can move rubble</li>
                 <li>Max Weight Capacity of 1000</li>
+                <li>Medium moving speed</li>
             </ul>
-            <li>1 Dumptruck</li>
+            <li>2 Dumptrucks</li>
             <ul>
                 <li>Can move rubble</li>
                 <li>Max Weight Capacity of 2000</li>
+                <li>Slowest moving speed</li>
             </ul>
         </ul>
         <b>if a trait is not listed for a robot, then it does NOT have that trait</b>
 
         <h2>Tasks</h2>
         <ul>
-            <li>Put out 1 fire</li>
-            <li>Remove 500 lbs of rubble</li>
+            <li>Put out 3 fires (A, B, and C)</li>
+            <li>Remove 2 stacks of rubble (500 lbs each)</li>
             <ul>
-                <li>Fire must be put out before this task can be started</li>
+                <li>Fire A must be put out before removing rubble A can be started</li>
+                <li>Fire B must be put out before removing rubble B can be started</li>
             </ul>
-            <li>Rescue 2 humans (150 lbs each)</li>
+            <li>Rescue 5 humans (150 lbs each)</li>
             <ul>
-                <li>Rubble has to be gone before humans can be rescued</li>
+                <li>Rubble A has to be gone before humans 1, 2 and 3 can be rescued</li>
+                <li>Rubble B has to be gone before humans 4 and 5 can be rescued</li>
             </ul>
         </ul>
 
@@ -63,13 +68,13 @@ function Question1() {
 
         <form>
             <input type="radio" id="option1" name="options" value="A" onChange={handleOptionChange} />
-            <label htmlFor="option1"><ChartsQ1A /></label>
+            <label htmlFor="option1"><ChartsQ2A /></label>
             <input type="radio" id="option2" name="options" value="B" onChange={handleOptionChange} />
-            <label htmlFor="option2"><ChartsQ1B /></label>
+            <label htmlFor="option2"><ChartsQ2B /></label>
             <input type="radio" id="option3" name="options" value="C" onChange={handleOptionChange} />
-            <label htmlFor="option3"><ChartsQ1C /></label>
+            <label htmlFor="option3"><ChartsQ2C /></label>
             <input type="radio" id="option4" name="options" value="D" onChange={handleOptionChange} />
-            <label htmlFor="option2"><ChartsQ1D /></label>
+            <label htmlFor="option2"><ChartsQ2D /></label>
         </form>
 
         <form>
@@ -91,5 +96,5 @@ function Question1() {
   }
 
 export {
-    Question1
+    Question2
 };
