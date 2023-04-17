@@ -31,6 +31,22 @@ export const data = [
       "rescue human 2",
       105*factor,122*factor
     ],
+
+    [
+      "dumptruck-1",
+      "",
+      140*factor,140*factor
+    ],
+    [
+      "firetruck-1",
+      "",
+      140*factor,140*factor
+    ],
+    [
+      "rescue-robot-1",
+      "",
+      140*factor,140*factor
+    ],
   ],
   [
     [
@@ -41,7 +57,7 @@ export const data = [
     ],
     [
       "dumptruck-1",
-      "remove rubble",
+      "rescue human 2",
       72*factor,92*factor
     ],
     [
@@ -51,14 +67,31 @@ export const data = [
     ],
     [
       "rescue-robot-1",
-      "rescue human 1",
+      "remove rubble",
       40*factor,58*factor
     ],
     [
       "rescue-robot-1",
-      "rescue human 2",
+      "rescue human 1",
       70*factor,85*factor
     ],
+
+    [
+      "dumptruck-1",
+      "",
+      140*factor,140*factor
+    ],
+    [
+      "firetruck-1",
+      "",
+      140*factor,140*factor
+    ],
+    [
+      "rescue-robot-1",
+      "",
+      140*factor,140*factor
+    ],
+    
   ],
   [
     [
@@ -86,6 +119,22 @@ export const data = [
       "dumptruck-1",
       "rescue human 2",
       105*factor,125*factor
+    ],
+
+    [
+      "dumptruck-1",
+      "",
+      140*factor,140*factor
+    ],
+    [
+      "firetruck-1",
+      "",
+      140*factor,140*factor
+    ],
+    [
+      "rescue-robot-1",
+      "",
+      140*factor,140*factor
     ],
   ],
   [
@@ -120,7 +169,23 @@ export const data = [
       "rescue-robot-1",
       "rescue human 2",
       100*factor,118*factor
-    ]    
+    ],
+    
+    [
+      "dumptruck-1",
+      "",
+      140*factor,140*factor
+    ],
+    [
+      "firetruck-1",
+      "",
+      140*factor,140*factor
+    ],
+    [
+      "rescue-robot-1",
+      "",
+      140*factor,140*factor
+    ]
   ]
 ];
 

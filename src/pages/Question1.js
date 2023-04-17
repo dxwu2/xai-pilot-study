@@ -67,4 +67,6 @@ function Question1() {
     )
   }
 
-export default Question1;
+export {
+    Question1
+};
