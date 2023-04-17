@@ -35,16 +35,20 @@ function Question1() {
             <ul>
                 <li>Can put out fires</li>
                 <li>Max Weight Capacity of 250</li>
+                <li>Fastest moving speed</li>
             </ul>
             <li>1 Rescue Robot</li>
             <ul>
-                <li>Can rescue humans, can move rubble</li>
+                <li>Can rescue humans</li>
+                <li>Can move rubble</li>
                 <li>Max Weight Capacity of 1000</li>
+                <li>Medium moving speed</li>
             </ul>
             <li>1 Dumptruck</li>
             <ul>
                 <li>Can move rubble</li>
                 <li>Max Weight Capacity of 2000</li>
+                <li>Slowest moving speed</li>
             </ul>
         </ul>
         <b>if a trait is not listed for a robot, then it does NOT have that trait</b>

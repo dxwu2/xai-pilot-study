@@ -31,12 +31,14 @@ function Question2() {
             <li>2 Firetrucks</li>
             <ul>
                 <li>Can put out fires</li>
+                <li>Can rescue humans</li>
                 <li>Max Weight Capacity of 250</li>
                 <li>Fastest moving speed</li>
             </ul>
             <li>3 Rescue Robots</li>
             <ul>
-                <li>Can rescue humans, can move rubble</li>
+                <li>Can rescue humans</li>
+                <li>Can move rubble</li>
                 <li>Max Weight Capacity of 1000</li>
                 <li>Medium moving speed</li>
             </ul>
