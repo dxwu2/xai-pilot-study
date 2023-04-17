@@ -1,4 +1,5 @@
 import { ChartsQ1A, ChartsQ1B, ChartsQ1C, ChartsQ1D, ChartsQ2A, ChartsQ2B, ChartsQ2C, ChartsQ2D } from '../chart';
+import { Link } from 'react-router-dom';
 
 const Solutions = () => {
     return (
@@ -102,7 +103,9 @@ const Solutions = () => {
                 <li>D is a slight improvement over A, but not as good as B</li>
             </ul>
           </div>
-          <button class="btn" type="submit">Next</button>
+          <Link to="/home">
+            <button class="btn" type="submit">Restart</button>
+          </Link>
         </form>
       </>
     )

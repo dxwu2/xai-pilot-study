@@ -9,18 +9,21 @@ function Question1() {
     };
 
     const navigate = useNavigate();
+    let textElement = document.getElementById("response");
 
     function handleButtonClick(event) {
-        // const history = useHistory();
         event.preventDefault();
         console.log('stored:', selectedOption)
+
+        // const textData = textElement.value;
+        // console.log(textData);
 
         navigate('/q2'); // navigate to next page
     }
 
-    function getResponse(val) {
-        console.log('asdf:', val);
-    }
+    // function getResponse(val) {
+    //     console.log('asdf:', val);
+    // }
 
     return (
       <>
@@ -76,7 +79,7 @@ function Question1() {
           <div class="form-control">
             <h3>Give an explanation for why you chose your answer and not the others. Also add any confusions/questions you had</h3>
             <label for="response"></label>
-            <textarea id="response" onChange={getResponse} type="text" rows="5" cols="50" />
+            <textarea id="response" type="text" rows="5" cols="50" />
           </div>
         </form>
 
