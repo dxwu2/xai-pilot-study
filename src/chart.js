@@ -14,7 +14,7 @@ export const data1 = [
     [
       "dumptruck-1",
       "remove rubble",
-      40*factor,62*factor
+      40*factor,62*factor,
     ],
     [
       "firetruck-1",
@@ -569,8 +569,10 @@ export const data2 = [
 ]
 
 export const options = {
+  // colors: ['blue', 'orange']
   timeline: {
-    colorByRowLabel: true,
+    // colorByRowLabel: true,
+    singleColor: 'green'
   },
 };
 
